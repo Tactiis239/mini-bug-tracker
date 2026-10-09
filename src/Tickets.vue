@@ -81,9 +81,6 @@ const deleteTicket = async (ticketId) => {
 <template>
   <div class="d-flex justify-content-between align-items-center mb-4">
     <h1 class="mb-0">Liste des tickets</h1>
-    <RouterLink :to="{ name: 'ticket-create' }" class="btn btn-dark">
-      + Ajouter un ticket
-    </RouterLink>
   </div>
 
   <div v-if="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
@@ -140,13 +137,6 @@ const deleteTicket = async (ticketId) => {
     </template>
   </TicketTable>
 
-  <div class="d-flex justify-content-center mt-3">
-    <Pagination
-        :current-page="currentPage"
-        :total-pages="totalPages"
-        @change="goToPage"
-    />
-  </div>
 </template>
 
 <style scoped>
