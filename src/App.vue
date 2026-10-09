@@ -12,13 +12,12 @@
         >
           Tickets
         </RouterLink>
-
         <RouterLink
             class="btn btn-outline-light"
             active-class="active"
-            to="/gestion-tickets"
+            to="/tickets/new"
         >
-          Gestion des tickets
+          Nouveau ticket
         </RouterLink>
       </div>
     </div>
